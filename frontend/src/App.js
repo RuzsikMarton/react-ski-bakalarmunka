@@ -1,7 +1,6 @@
 import {BrowserRouter, Link, Route, Routes} from 'react-router-dom';
 import {ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css'
-import KolcsonScreen from "./oldalak/KolcsonScreen";
 import ProductScreen from "./oldalak/ProductScreen";
 import {Badge, Button, Col, Container, Nav, Navbar, NavDropdown} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
@@ -134,7 +133,6 @@ function App() {
       <Container>
         <Routes>
             <Route path={'/skipass'} element={<SkiPassScreen></SkiPassScreen>}></Route>
-          <Route path={'/kolcsonzo'} element={<KolcsonScreen></KolcsonScreen>}></Route>
           <Route path={'/kolcsonzo/:slug'} element={<ProductScreen></ProductScreen>}></Route>
             <Route path={'/kosar'} element={<CartScreen></CartScreen>}></Route>
             <Route path={'/signin'} element={<SigninScreen></SigninScreen>}></Route>
