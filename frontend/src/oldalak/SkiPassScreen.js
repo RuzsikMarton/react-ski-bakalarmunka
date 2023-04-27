@@ -155,21 +155,21 @@ function SkiPassScreen(){
                 setAvgSnow(Math.round(avgs));
                 if((avg > -1 || avg < -5) && avgs < 50){
                     if(duration==='Teljes szezon'){
-                        setTotalAmount((product.ar*15)*0.8);
+                        setTotalAmount((product.ar*15)*0.8*person);
                     }else{
-                        setTotalAmount((product.ar*duration)*0.8);
+                        setTotalAmount((product.ar*duration)*0.8*person);
                     }
                 } else if((avg > -1 || avg < -5) || avgs < 50){
                     if(duration==='Teljes szezon'){
-                        setTotalAmount((product.ar*15)*0.9);
+                        setTotalAmount((product.ar*15)*0.9*person);
                     }else{
-                        setTotalAmount((product.ar*duration)*0.9);
+                        setTotalAmount((product.ar*duration)*0.9*person);
                     }
                 } else {
                     if(duration==='Teljes szezon'){
-                        setTotalAmount(product.ar*15);
+                        setTotalAmount(product.ar*15*person);
                     }else{
-                        setTotalAmount(product.ar*duration);
+                        setTotalAmount(product.ar*duration*person);
                     }
                 }
             } catch (err) {
@@ -300,7 +300,7 @@ function SkiPassScreen(){
                 </Row>
             </Form>
             </Card>
-            {weather ? (<div><Skipass area={getarea} duration={getduration} startDate={getstartDate} endDate={getendDate} person={getperson} avgtemp={avgtemp} avgsnow={avgsnow} checkoutHandler={checkoutHandler} totalPrice={totalAmount*getperson} getData={getData}></Skipass>
+            {weather ? (<div><Skipass area={getarea} duration={getduration} startDate={getstartDate} endDate={getendDate} person={getperson} avgtemp={avgtemp} avgsnow={avgsnow} checkoutHandler={checkoutHandler} totalPrice={totalAmount} getData={getData}></Skipass>
                     <Row className={"mt-5"}>
                         <Col>
                             <TemperatureBar value={avgtemp} mintemp={lowtemp} maxtemp={hightemp} minheight={minsnow} maxheight={maxsnow}></TemperatureBar>
