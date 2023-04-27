@@ -10,6 +10,7 @@ import moment from "moment";
 import TemperatureBar from "../komponensek/TemperatureBar";
 import {useNavigate} from "react-router-dom";
 import {Helmet} from "react-helmet-async";
+import MessageBox from "../komponensek/MessageBox";
 
 const reducer = (state, action) => {
     switch (action.type) {
@@ -207,6 +208,7 @@ function SkiPassScreen(){
 
 
     return(
+        loading ? (<LoadingBox></LoadingBox>) : error ? (<MessageBox variant={'danger'}>{error}</MessageBox>) : (
         <div>
             <Helmet><title>Skipass</title></Helmet>
             <Card className={"my-5 p-3 shadow"} style={{background: '#f9f9f9'}}>
@@ -308,7 +310,7 @@ function SkiPassScreen(){
                     </Row>
                 </div>)
                 : <div></div>}
-        </div>
+        </div>)
     )
 }
 export default SkiPassScreen;
