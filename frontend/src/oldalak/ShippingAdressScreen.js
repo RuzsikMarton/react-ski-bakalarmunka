@@ -57,7 +57,7 @@ function ShippingAdressScreen(){
         <Helmet>
             <title>Személyes adatok</title>
         </Helmet>
-        <CheckoutSteps step1 step2 step3></CheckoutSteps>
+        <CheckoutSteps step1 step2></CheckoutSteps>
         <div className={"container small-container"}>
             <h1 className={"my-3"}>Személyes adatok</h1>
             <Form onSubmit={submitHandler}>

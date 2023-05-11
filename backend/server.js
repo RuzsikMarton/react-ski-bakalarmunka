@@ -10,15 +10,15 @@ import uploadRouter from "./routes/uploadRoutes.js";
 import skipassRouter from "./routes/skipassRoutes.js";
 import weatherRouter from "./routes/weatherRoutes.js";
 
+
 dotenv.config();
+const app = express();
 
 mongoose.connect(process.env.MONGODB_URI).then(() => {
     console.log('connected to db');
 }).catch(err => {
     console.log(err.message);
 })
-
-const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));

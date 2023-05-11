@@ -82,7 +82,7 @@ function PlaceOrderScreen(){
     },[cart, navigate]);
     const method = cart.paymentMethod.toLowerCase();
     return  (   <div>
-        <CheckoutSteps step1 step2 step3 step4 step5></CheckoutSteps>
+        <CheckoutSteps step1 step2 step3 step4></CheckoutSteps>
         <Helmet>
             <title>Rendelés attekintése</title>
         </Helmet>

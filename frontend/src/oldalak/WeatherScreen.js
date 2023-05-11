@@ -173,8 +173,6 @@ function WeatherScreen() {
                 });
             }
         };
-
-
         fetchWeather(bdate,edate);
         console.log(bdate,edate)
 

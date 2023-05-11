@@ -203,7 +203,6 @@ function AccomodationScreen(){
 
     return(
         <div>
-            <CheckoutSteps step1></CheckoutSteps>
             <Helmet><title>Szállás</title></Helmet>
             <div className={'container'}>
                 <h1 className={'my-3'}>Szállás foglalás</h1>

@@ -7,13 +7,11 @@ const skipassSchema = new mongoose.Schema(
         image: {type: String, required: true},
         ar: {type: Number, required:true},
         description: {type: String, required: true},
-        //user: {type: mongoose.Schema.Types.ObjectId, ref:'User', required:true},
     },
     {
         timestamps: true,
     }
 );
-
 const Skipass = mongoose.model('Skipass', skipassSchema);
 export default Skipass;
 

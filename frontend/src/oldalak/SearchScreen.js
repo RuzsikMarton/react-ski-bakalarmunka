@@ -74,7 +74,7 @@ export const ratings = [
 function SearchScreen(){
     const navigate = useNavigate();
     const { search } = useLocation();
-    const sp = new URLSearchParams(search); // /search?category=Shirts
+    const sp = new URLSearchParams(search);
     const category = sp.get('category') || 'all';
     const brand = sp.get('brand') || 'all';
     const query = sp.get('query') || 'all';

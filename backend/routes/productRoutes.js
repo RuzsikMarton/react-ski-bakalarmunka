@@ -168,7 +168,6 @@ productRouter.get(
         const arFilter =
             ar && ar !== "all"
                 ? {
-                    // 1-50
                     ar: {
                         $gte: Number(ar.split("-")[0]),
                         $lte: Number(ar.split("-")[1]),

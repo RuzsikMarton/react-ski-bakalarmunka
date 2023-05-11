@@ -197,7 +197,6 @@ function SkiPassScreen(){
             const existItem = cart.cartItems.find((x) => x._id === product._id && x.from === from && x.to === to);
             const quantity = existItem ? existItem.quantity + 1 : 1;
             const totalDays = duration;
-            console.log(quantity);
             product.name = 'Skipass - ' + product.name + ' ' + person.toString() + ' ' + 'személyre';
             ctxDispatch({
                 type: 'CART_ADD_ITEM',

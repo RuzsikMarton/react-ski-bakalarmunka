@@ -2,7 +2,6 @@ import express from "express";
 import Weather from "../models/weatherModel.js";
 import {isAdmin, isAuth} from "../utils.js";
 import expressAsyncHandler from "express-async-handler";
-import Product from "../models/productModel.js";
 
 const weatherRouter = express.Router();
 

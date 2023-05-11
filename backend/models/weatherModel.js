@@ -10,7 +10,5 @@ const weatherSchema = new mongoose.Schema(
         timestamps:true,
     }
 );
-
 const Weather = mongoose.model('Weather', weatherSchema);
-
 export default Weather;
