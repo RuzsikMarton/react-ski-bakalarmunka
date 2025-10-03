@@ -1,4 +1,4 @@
-# 🎿 React Ski – Bakalármunka (Bachelor Thesis Project)
+# 🎿 React Ski – Bachelor Thesis Project
 
 A full-stack ski platform built with **React** and **Node.js/Express** as part of a bachelor’s thesis.  
 The app features authentication, user interaction, and ski-related data visualization with a modern UI.  
